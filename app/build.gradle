@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\harsh\\Documents\\mykeystore\\keystore1.jks')
+            storePassword 'Harshul@14'
+            keyAlias 'key0'
+            keyPassword 'Harshul@14'
+        }
+    }
     namespace 'com.developer.harshul.skystriker'
     compileSdk 33
 
@@ -14,6 +22,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
@@ -21,6 +30,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    lint {
+        baseline = file("lint-baseline.xml")
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
