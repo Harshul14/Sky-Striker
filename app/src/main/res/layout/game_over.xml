@@ -11,9 +11,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
         android:text="Restart"
         android:onClick="restart"
-        android:background="@android:color/holo_blue_dark"
+        android:background="#cc5500"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:padding="10dp"/>
@@ -24,9 +25,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
         android:text="Exit"
         android:onClick="exit"
-        android:background="@android:color/holo_blue_dark"
+        android:background="#cc5500"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:padding="10dp"/>
